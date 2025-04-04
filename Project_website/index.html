@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium quality meats at Ramechhap Meat Shop">
+    <title>Ramechhap Meat Shop - Premium Meats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="meat-grinder">
+                <div class="grinder-body">
+                    <div class="grinder-hole"></div>
+                    <div class="grinder-blade"></div>
+                    <div class="meat-piece"></div>
+                    <div class="meat-piece"></div>
+                    <div class="meat-piece"></div>
+                    <div class="meat-piece"></div>
+                </div>
+            </div>
+            <p>Preparing Fresh Meats...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/pimage/logo.png" alt="Ramechhap Meat Shop Logo" width="120">
+                <span>Ramechhap Meat Shop</span>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="#quality" class="nav-link">Quality</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item phone">
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Floating Meats -->
+    <section class="hero" id="home">
+        <div class="floating-meats">
+            <!-- Meats will be added via JavaScript -->
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-aos="fade-down" data-aos-delay="200" style="text-transform: uppercase;">Ramechhap meat shop</h1>
+                <h2 data-aos="fade-down" data-aos-delay="250" style>शुद्ध मासु, शुद्ध विश्वास</h2>
+                <p data-aos="fade-down" data-aos-delay="300">Locally sourced, hygienically processed meats for your family</p>
+                <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#products" class="btn btn-primary">Our Products</a>
+                    <a href="tel:+977 9849895788" class="btn btn-secondary animate__animated animate__bounceIn">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down" data-aos="fade-up" data-aos-delay="500">
+            <span></span>
+        </div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Our Meat Shop</h2>
+                <div class="underline"></div>
+                <p>Our story of quality and tradition</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img" data-aos="fade-right">
+                    <div class="img-frame">
+                        <img src="/pimage/about.png" alt="Ramechhap Meat Shop interior" class="about-shop-img">
+                        <div class="frame-decoration"></div>
+                    </div>
+                    <div class="experience-badge" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="badge-content">
+                            <span>10+</span>
+                            <small>Years Experience</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Family-Owned Since 2071</h3>
+                    <p>Ramechhap Meat Shop has been serving the community with fresh, high-quality meats for over 10 years. We take pride in sourcing our livestock from local farmers and maintaining the highest standards of hygiene.</p>
+                    <p>Our butchers are experienced professionals who handle meat with care and precision. We follow strict quality control measures to ensure you get only the best cuts every time.</p>
+                    <div class="about-features">
+                        <div class="feature" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Fresh</span>
+                        </div>
+                        <div class="feature" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hygienic Processing</span>
+                        </div>
+                        <div class="feature" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fair Prices</span>
+                        </div>
+                        <div class="feature" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Local Sourcing</span>
+                        </div>
+                    </div>
+                    <div class="signature" data-aos="fade-up" data-aos-delay="500">
+                        <img src="/pimage/sign.png" alt="Owner signature">
+                        <p>Ramesh Kumar Karki, Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section-padding" id="products">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2> Meat Products</h2>
+                <div class="underline"></div>
+                <p>We offer a variety of fresh meat products to meet your culinary needs</p>
+            </div>
+            <div class="product-categories">
+                <div class="category-tabs" data-aos="fade-up" data-aos-delay="100">
+                    <button class="tab-btn active" data-category="all">All</button>
+                    <button class="tab-btn" data-category="chicken">Chicken</button>
+                    <button class="tab-btn" data-category="mutton">Mutton</button>
+                    <button class="tab-btn" data-category="egg">Eggs</button>
+                </div>
+                <div class="product-grid" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Products will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Assurance Section -->
+    <section class="quality section-padding" id="quality">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Quality Standards</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="quality-steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-icon">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <h3>Local Sourcing</h3>
+                    <p>We source livestock only from trusted local farmers who raise animals naturally.</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-icon">
+                        <i class="fas fa-hand-holding-water"></i>
+                    </div>
+                    <h3>Hygienic Processing</h3>
+                    <p>Our processing area is cleaned daily and follows strict hygiene protocols.</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-icon">
+                        <i class="fas fa-temperature-low"></i>
+                    </div>
+                    <h3>Proper Storage</h3>
+                    <p>Meats are stored at optimal temperatures to maintain freshness and quality.</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Quick Delivery</h3>
+                    <p>We deliver quickly to ensure meats stay fresh until they reach your kitchen.</p>
+                </div>
+            </div>
+
+            <!-- Freshness Indicator -->
+            <div class="freshness-indicator" data-aos="fade-up">
+                <div class="smoke">
+                    <span style="--i:1"></span>
+                    <span style="--i:2"></span>
+                    <span style="--i:3"></span>
+                    <span style="--i:4"></span>
+                    <span style="--i:5"></span>
+                </div>
+                <p>Freshly Prepared Daily</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>What Our Customers Say</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The mutton from Ramechhap Meat Shop is always fresh and tender. I've been a regular customer for years!"</p>
+                    <div class="customer">
+                        <img src="/pimage/c1.png" alt="Customer">
+                        <h4>Ram Bahadur</h4>
+                    </div>
+                </div>
+                <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Best chicken in town! The meat is always clean and well-cut. Highly recommended for all meat lovers."</p>
+                    <div class="customer">
+                        <img src="/pimage/c2.png" alt="Customer">
+                        <h4>Hari Shrestha</h4>
+                    </div>
+                </div>
+                <div class="testimonial" data-aos="fade-up" data-aos-delay="300">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Their mutton sukuti is excellent for making traditional Newari dishes. Always fresh and properly cleaned."</p>
+                    <div class="customer">
+                        <img src="/pimage/c3.png" alt="Customer">
+                        <h4>Anita Shrestha</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Marquee -->
+    <section class="meat-marquee">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>Today's Special: Fresh Mutton at Rs. 1100/kg</span>
+                <i class="fas fa-drumstick-bite"></i>
+                <span>Free Delivery on Orders Above Rs. 2000</span>
+                <i class="fas fa-utensils"></i>
+                <span>Weekend Discount: 10% Off on Chicken</span>
+                <i class="fas fa-percentage"></i>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span>Today's Special: Fresh Mutton at Rs. 1100/kg</span>
+                <i class="fas fa-drumstick-bite"></i>
+                <span>Free Delivery on Orders Above Rs. 2000</span>
+                <i class="fas fa-utensils"></i>
+                <span>Weekend Discount: 10% Off on Chicken</span>
+                <i class="fas fa-percentage"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Visit Our Shop</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Gatthaghar,Bhaktapur-3</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+977 9849895788</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p> 6:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="tel:+977 9849895788"><i class="fab fa-facebook-f"></i></a>
+                        <a href="tel:+977 9849895788"><i class="fab fa-instagram"></i></a>
+                        <a href="tel:+977 9849895788"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Ramechhap Meat Shop</h3>
+                    <p style="font-size: 5rem; font-weight: 500;">उत्कृष्ट स्वाद</p>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#quality">Quality</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#products">Chicken</a></li>
+                        <li><a href="#products">Mutton</a></li>
+                        <li><a href="#products">Eggs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Gatthaghar Bhaktapur-3</li>
+                        <li><i class="fas fa-phone"></i> +977 9849895788</li>
+                        <li><i class="fas fa-envelope"></i> info@hajurkopasal.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Map and QR Code Section -->
+            <div class="footer-map-qr">
+                <div class="map-container" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Find Us</h3>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8422.311091569849!2d85.35367662013687!3d27.668598048511107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b5fe655a0f1%3A0x2b026e254f8d43e2!2sGatthaghar%20banquet.!5e0!3m2!1sen!2snp!4v1743772486173!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="qr-container" data-aos="fade-up" data-aos-delay="600">
+                    <h3>Scan to Pay</h3>
+                    <div class="qr-code">
+                        <img src="/pimage/code.png" alt="Payment QR Code">
+                        <p>Esewa / Khalti / Mobile Banking</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Ramechhap Meat Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
