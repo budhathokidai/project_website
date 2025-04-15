@@ -627,7 +627,7 @@ img {
 .hero {
     height: 100vh;
     min-height: 600px;
-    background: linear-gradient(rgba(136, 1, 1, 0.6), #fff), url('/pimage/Red\ Illustrative\ Meat\ Cutter\ Knife\ Restaurant\ Logo\ \(1\).png');
+    background: linear-gradient(rgba(136, 1, 1, 0.6), #fff), url('pimage/backgrounf.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
