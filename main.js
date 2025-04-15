@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 350,
             "priceDisplay": "Rs. 350/kg",
             "unit": "kg",
-            "image": "/pimage/whole chicken.png"
+            "image": "pimage/whole chicken.png"
         },
         {
             "id": 2,
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 1200,
             "priceDisplay": "Rs. 1200/kg",
             "unit": "kg",
-            "image": "/pimage/full-whole-mutton.png"
+            "image": "pimage/full-whole-mutton.png"
         },
         {
             "id": 3,
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 800,
             "priceDisplay": "Rs. 800/kg",
             "unit": "kg",
-            "image": "/pimage/boneless.png"
+            "image": "pimage/boneless.png"
         },
         {
             "id": 4,
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 700,
             "priceDisplay": "Rs. 700/kg",
             "unit": "kg",
-            "image": "/pimage/mince.jpg"
+            "image": "pimage/mince.jpg"
         },
         {
             "id": 5,
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 450,
             "priceDisplay": "Rs. 450/kg",
             "unit": "kg",
-            "image": "/pimage/drumstick.png"
+            "image": "pimage/drumstick.png"
         },
         {
             "id": 6,
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 15,
             "priceDisplay": "Rs. 15/egg",
             "unit": "egg",
-            "image": "/pimage/reggs.png"
+            "image": "pimage/reggs.png"
         },
         {
             "id": 7,
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 1100,
             "priceDisplay": "Rs. 1100/kg",
             "unit": "kg",
-            "image": "/pimage/curry cut.jpg"
+            "image": "pimage/curry cut.jpg"
         },
         {
             "id": 8,
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 850,
             "priceDisplay": "Rs. 850/kg",
             "unit": "kg",
-            "image": "/pimage/ribs.jpg"
+            "image": "pimage/ribs.jpg"
         },
         {
             "id": 9,
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 1500,
             "priceDisplay": "Rs. 1500/kg",
             "unit": "kg",
-            "image": "/pimage/sukuti.jpg"
+            "image": "pimage/sukuti.jpg"
         },
         {
             "id": 10,
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 25,
             "priceDisplay": "Rs. 25/egg",
             "unit": "egg",
-            "image": "/pimage/organic.jpg"
+            "image": "pimage/organic.jpg"
         },
         {
             "id": 11,
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 30,
             "priceDisplay": "Rs. 30/egg",
             "unit": "egg",
-            "image": "/pimage/duck.jpg"
+            "image": "pimage/duck.jpg"
         },
         {
             "id": 12,
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": 20,
             "priceDisplay": "Rs. 20/egg",
             "unit": "egg",
-            "image": "/pimage/quail.png"
+            "image": "pimage/quail.png"
         }
     ];
     
