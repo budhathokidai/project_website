@@ -491,10 +491,10 @@ const methodQR = document.querySelector('.method-qr');
 
 // QR code images for different methods
 const qrCodes = {
-    esewa: '/pimage/esewa-qr.png',
-    khalti: '/pimage/khalti-qr.png',
-    bank: '/pimage/bank-qr.png',
-    cod: '/pimage/cod-icon.png'
+    esewa: 'pimage/code.png',
+    khalti: 'pimage/code.png',
+    bank: 'pimage/code.png',
+    cod: 'pimage/code.png'
 };
 
 // Open payment modal
@@ -548,7 +548,7 @@ paymentMethods.forEach(method => {
         
         if (methodType === 'cod') {
             document.querySelector('.qr-code-container').innerHTML = `
-                <img src="/pimage/code.png" alt="Cash on Delivery" style="max-width: 150px;">
+                <img src="pimage/code.png" alt="Cash on Delivery" style="max-width: 150px;">
                 <p>Pay when you receive your order</p>
                 <div class="payment-details">
                     <p>Our delivery person will collect the payment</p>
