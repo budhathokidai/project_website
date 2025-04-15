@@ -44,9 +44,6 @@
                     <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="#quality" class="nav-link">Quality</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                    <li class="nav-item phone">
-                        </a>
-                    </li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -54,6 +51,10 @@
                     <span class="bar"></span>
                 </div>
             </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
         </div>
     </header>
 
@@ -62,20 +63,19 @@
         <div class="floating-meats">
             <!-- Meats will be added via JavaScript -->
         </div>
-        
-        <div class="container">
-            <div class="hero-content">
-                <h1 data-aos="fade-down" data-aos-delay="200" style="text-transform: uppercase;">Ramechhap meat shop</h1>
-                <h2 data-aos="fade-down" data-aos-delay="250" style>शुद्ध मासु, शुद्ध विश्वास</h2>
-                <p data-aos="fade-down" data-aos-delay="300">Locally sourced, hygienically processed meats for your family</p>
-                <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
-                    <a href="#products" class="btn btn-primary">Our Products</a>
-                    <a href="tel:+977 9849895788" class="btn btn-secondary animate__animated animate__bounceIn">
-                        <i class="fas fa-phone"></i> Call Now
-                    </a>
-                </div>
-            </div>
+       <div class="container">
+    <div class="hero-content">
+        <h1 data-aos="fade-down" data-aos-delay="200" class="text-3d">RAMECHHAP MEAT SHOP</h1>
+        <h2 data-aos="fade-down" data-aos-delay="250" class="text-3d-nepali">शुद्ध मासु, शुद्ध विश्वास</h2>
+        <p data-aos="fade-down" data-aos-delay="300" class="text-3d-sub">Locally sourced, hygienically processed meats for your family</p>
+        <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
+            <a href="#products" class="btn btn-primary">Our Products</a>
+            <a href="tel:+977 9849895788" class="btn btn-secondary">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
         </div>
+    </div>
+</div>
         <div class="scroll-down" data-aos="fade-up" data-aos-delay="500">
             <span></span>
         </div>
@@ -386,6 +386,104 @@
         </div>
     </footer>
 
+    <!-- Shopping Cart Panel -->
+    <div class="cart-panel">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span class="total-price">Rs. 0</span>
+        </div>
+        <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Previous head content remains the same -->
+    <!-- Add new payment modal at the bottom of body -->
+</head>
+<body>
+    <!-- All previous content remains the same until footer -->
+
+    <!-- Enhanced Payment Modal -->
+    <div class="payment-modal">
+        <div class="payment-content">
+            <span class="close-payment">&times;</span>
+            <div class="payment-steps">
+                <div class="step active" data-step="1">
+                    <span>1</span>
+                    <p>Review Order</p>
+                </div>
+                <div class="step" data-step="2">
+                    <span>2</span>
+                    <p>Payment Method</p>
+                </div>
+                <div class="step" data-step="3">
+                    <span>3</span>
+                    <p>Complete Payment</p>
+                </div>
+            </div>
+            
+            <div class="payment-sections">
+                <div class="payment-section active" id="review-order">
+                    <h3>Your Order Summary</h3>
+                    <div class="order-items"></div>
+                    <div class="order-total">
+                        <span>Total:</span>
+                        <span class="total-amount">Rs. 0</span>
+                    </div>
+                    <button class="btn btn-primary next-step">Proceed to Payment</button>
+                </div>
+                
+                <div class="payment-section" id="choose-method">
+                    <h3>Select Payment Method</h3>
+                    <div class="payment-methods">
+                        <div class="payment-method" data-method="esewa">
+                            <img src="/pimage/code.png" alt="eSewa">
+                            <span>eSewa</span>
+                        </div>
+                        <div class="payment-method" data-method="khalti">
+                            <img src="/pimage/code.png" alt="Khalti">
+                            <span>Khalti</span>
+                        </div>
+                        <div class="payment-method" data-method="bank">
+                            <img src="/pimage/code.png" alt="Bank Transfer">
+                            <span>Bank Transfer</span>
+                        </div>
+                        <div class="payment-method" data-method="cod">
+                            <img src="/pimage/code.png" alt="Cash on Delivery">
+                            <span>Cash on Delivery</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary prev-step">Back</button>
+                </div>
+                
+                <div class="payment-section" id="complete-payment">
+                    <h3 class="payment-method-title">Complete Payment via <span></span></h3>
+                    <div class="qr-code-container">
+                        <img class="method-qr" src="" alt="QR Code">
+                        <p>Scan the QR code to pay</p>
+                        <div class="payment-details">
+                            <p><strong>Account Name:</strong> Ramechhap Meat Shop</p>
+                            <p><strong>Account Number:</strong> 1234567890</p>
+                            <p><strong>Amount:</strong> <span class="payment-amount">Rs. 0</span></p>
+                        </div>
+                    </div>
+                    <div class="payment-actions">
+                        <button class="btn btn-secondary prev-step">Back</button>
+                        <button class="btn btn-primary confirm-payment">I've Paid</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
 </body>
