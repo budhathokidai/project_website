@@ -638,7 +638,7 @@ img {
     padding-top: 80px;
     position: relative;
     overflow: hidden;
-    opacity: 0.85;
+    opacity: 0.95;
 }
 
 .hero::before {
@@ -1375,7 +1375,59 @@ img {
     0% { transform: scale(1); }
     100% { transform: scale(1.2); }
 }
-
+/* Marquee fixes for mobile */
+@media (max-width: 768px) {
+    .meat-marquee {
+        padding: 12px 0;
+    }
+    
+    .marquee-content {
+        flex-wrap: nowrap;
+        width: auto;
+        animation: none;
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .marquee-content::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+    }
+    
+    .marquee-content span {
+        font-size: 1.4rem;
+        white-space: nowrap;
+        padding: 0 15px;
+        flex-shrink: 0;
+    }
+    
+    .marquee-content i {
+        font-size: 1.4rem;
+        flex-shrink: 0;
+    }
+    
+    /* Remove the duplicate marquee content for mobile */
+    .marquee-content[aria-hidden="true"] {
+        display: none;
+    }
+    
+    /* Optional: Add gradient fade to indicate scrollable content */
+    .marquee-container {
+        position: relative;
+    }
+    
+    .marquee-container::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 100%;
+        background: linear-gradient(to right, transparent, var(--primary));
+        pointer-events: none;
+    }
+}
 /* Contact Section */
 .contact {
     position: relative;
